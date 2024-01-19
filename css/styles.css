@@ -1,12 +1,7 @@
 /*fonts*/
 @font-face {
-  font-family: bahnschrift;
-  src: url(../fonts/BAHNSCHRIFT.TTF);
-}
-
-@font-face {
-  font-family: avenirNext;
-  src: url(../fonts/avenirNext.otf);
+  font-family: bern;
+  src: url(../fonts/bernhc.ttf);
 }
 
 html {
@@ -19,10 +14,11 @@ body {
 }
 
 h1 {
-  font-family: avenirNext;
+  font-family: bern;
+
   }
 p {
-  font-family: bahnschrift;
+  font-family: bern;
 }
 
 .scrollableElement {
@@ -42,8 +38,10 @@ p {
 
 /* section positioning */
 
-/* #introduction {
-  bottom: 28%; left: 30%; width: 50%; text-align: left; color: white;
+#introduction {
+  bottom: 60%; left: 17.5%; width: 50%; text-align: left; color: white;
+  rotate: 15deg;
+  text-align: right;
 }
 
 #howitworks {
@@ -95,18 +93,20 @@ p {
 }
 
 @media only screen and (max-width: 1186px) {
-  /* body {
+  body {
       font-size: 1.5vw;
   }
 
   h1 {
-      font-size: 5vw;
+      font-size: 4vw;
   }
 
   #introduction {
-      bottom: 27%;
+      bottom: 55%;
+      left: 20%;
   }
 
+  /*
   #howitworks {
       bottom: 44%;
   }
@@ -135,6 +135,7 @@ p {
       font-size: 2vw;
   }
 }
+
 
 @media only screen and (max-width: 675px) {
   .buttons * {
