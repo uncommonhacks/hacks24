@@ -67,13 +67,21 @@
                <div id="schedule">
                 <h2>schedule</h2>
                </div>
-               <div id="about">
+               <div id="about" class="popup" onclick="myFunction()">
                 <h2>about</h2>
+                <span class="popuptext" id="myPopup">A Simple Popup!</span>
                </div>
 
             </div>
         </div>
 
+          <script>
+          // When the user clicks on div, open the popup
+          function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+          }
+        </script>
 
         <script src="js/script.js"></script>
         <!-- External javascript -->
