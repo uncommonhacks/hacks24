@@ -67,13 +67,15 @@
                <div id="schedule">
                 <h2>schedule</h2>
                </div>
+               
                <div id="about" class="popup" onclick="myFunction()">
                 <h2>about</h2>
-                <div class="popuptext" id="myPopup">
-                  <img width=100% src="images/frame.png"/>
-                </div>
+                
                </div>
 
+            </div>
+            <div class="popuptext" id="myPopup">
+              <img width=100% src="images/frame.png"/>
             </div>
         </div>
 
@@ -82,6 +84,7 @@
           function myFunction() {
             var popup = document.getElementById("myPopup");
             popup.classList.toggle("show");
+            // popup.setAttribute("visibility", "show");
           }
         </script>
 
