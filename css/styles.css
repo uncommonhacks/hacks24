@@ -28,6 +28,10 @@ h2 {
   font-family: bern;
   font-size: 3vw;
 }
+h3 {
+  font-family: bern;
+  font-size: 2vw;
+}
 p {
   font-family: bern;
 }
@@ -83,11 +87,57 @@ p {
 }
 
 #about {
-  bottom: 91.5%;
-  left: 17%;
+  bottom: 22%;
+  left: 13%;
   width: 30%;
   text-align: center;
-} */
+} 
+
+#register {
+  bottom: 9.5%;
+  left: 8%;
+  width: flex;
+  text-align: center;
+  rotate: -33deg;
+} 
+
+#schedule {
+  bottom: 18%;
+  left: 40%;
+  width: 30%;
+  text-align: center;
+} 
+
+#judging {
+  bottom: 15.5%;
+  left: 66%;
+  width: 30%;
+  text-align: center;
+}
+
+#team {
+  bottom: 40%;
+  left: 72%;
+  width: 30%;
+  text-align: center;
+}
+
+#sponsors {
+  bottom: 67%;
+  left: 76.5%;
+  width: 30%;
+  text-align: center;
+}
+
+#contact {
+  bottom: 87%;
+  left: 76.5%;
+  width: 30%;
+  text-align: center;
+  rotate: -10deg;
+}
+
+*/
 
 .btn {
   background-color: #F26F63 !important;
@@ -98,7 +148,7 @@ p {
   bottom: 2.5%;
   width: 100%;
   text-align: center;
-  font-family: avenirNext;
+  font-family: baskerville;
 }
 
 .buttons * {
@@ -119,8 +169,7 @@ p {
   }
 
   #introduction {
-      bottom: 55%;
-      left: 20%;
+      bottom: 58%; left: 21%;
   }
 
   /*
