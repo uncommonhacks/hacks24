@@ -52,6 +52,11 @@ h3 {
   position: absolute;
 }
 
+.verticalScrollElement {
+  max-height: 40vh;
+  overflow-y: scroll;
+}
+
 /* section positioning */
 
 #introduction {
@@ -140,10 +145,10 @@ h3 {
 
 */
 
-.btn {
+/* .btn {
   background-color: #F26F63 !important;
   border: #F26F63 !important;
-}
+} */
 
 .buttons {
   bottom: 2.5%;
