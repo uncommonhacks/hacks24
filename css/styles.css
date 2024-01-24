@@ -32,13 +32,24 @@ h1 {
   font-size: 4vw;
 
   }
+h1:hover {
+  color:white;
+}
 h2 {
   font-family: bern;
   font-size: 3vw;
 }
+h2:hover {
+  color:#e3be67;
+}
+
 h3 {
   font-family: bern;
   font-size: 2vw;
+}
+
+h3:hover {
+  color:brown;
 }
 
 .scrollableElement {
@@ -110,6 +121,10 @@ h3 {
   text-align: center;
   rotate: -33deg;
 } 
+
+.registerHover:hover {
+  color: brown !important;
+}
 
 #schedule {
   bottom: 18%;
