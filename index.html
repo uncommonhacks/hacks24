@@ -52,7 +52,7 @@
                <div id="contact">
                 <h3>contact/socials</h3>
                </div>
-               <div id="faq">
+               <div id="faq" class="popup" onclick="toggleSection('faqPopup')">
                 <h2>faq</h2>
                </div>
                <div id="team">
@@ -64,7 +64,7 @@
                <div id="judging">
                 <h2>judging</h2>
                </div>
-               <div id="schedule" >
+               <div id="schedule" class="popup" onclick="toggleSection('schedulePopup')" >
                 <h2>schedule</h2>
                </div>
                
@@ -75,13 +75,117 @@
             </div>
 
             <!--Popups-->
+
+            <div class="popupcontainer" id="faqPopup">
+                <img width=100% src="images/frame.png"/>
+                <div class="popuptext">
+                  <h2>about</h2>
+                  <p class="verticalScrollElement">
+
+                    <u>- Is Hacks only for undergraduate students?</u><br>
+                    - No, high school or university students are welcome to come join us!
+                    <br>
+                    <br>
+                    <u>- Do I have to be on a team?</u><br>
+                    - No, although we recommend it.
+                    <br>
+                    <br>
+                    <u>- How big can teams be?</u><br>
+                    - Up to five people.
+                    <br>
+                    <br>
+                    <u>- Do I have to pay for anything?</u><br>
+                    - Nope!
+                    <br>
+                    <br>
+                    <u>- Did you say prizes?</u><br>
+                    - Affirmative, we will be handing out various prizes to the top submissions.
+                    <br>
+                    <br>
+                    <u>- What should I bring?</u><br>
+                    - The basic thing is a laptop, and if you are planning on staying the night we recommend some additional items: a sleeping bag, change of clothes, and a toothbrush/toothpaste.
+                    <br>
+                    <br>
+                    <u>- So I don't have to stay the night?</u><br>
+                    - You do not, although we may have limitations on when people can enter and exit the venue during the night.
+                    <br>
+
+                  </p>
+                  <button onClick="toggleSection('faqPopup')">Close</button>
+                </div>
+            </div>
+
+            <div class="popupcontainer" id="schedulePopup">
+                <img width=100% src="images/frame.png"/>
+                <div class="popuptext">
+                  <h2>about</h2>
+                  <p class="verticalScrollElement">
+
+                    <u>Friday Workshop night</u><br>
+                    6:00 – workshop 1 <br>
+                    7:00 – workshop 2 <br>
+
+                    <br>
+
+                    <u>Day 1</u><br>
+                    9:00 - doors open, check-in, team formation, breakfast <br>
+                    10:00 - opening ceremony <br>
+                    10:30 - hacking begins <br>
+                    12:00 - lunch <br>
+                    3:00 - Google Cloud workshop <br>
+                    4:00 - puzzle hunt <br>
+                    6:00 - dinner <br>
+                    9:00 - “Who did it?!” mystery competition <br>
+
+                    <br>
+
+                    <u>Day 2</u><br>
+                    12:00 - midnight snack <br>
+                    8:00 - morning meditation <br>
+                    9:00 - breakfast <br>
+                    10:00 - projects due, project fair <br>
+                    11:00 - judge deliberation <br>
+                    12:00 - awards, closing ceremony <br>
+                    12:30 - event ends! 
+
+                    <br>
+
+                  </p>
+                  <button onClick="toggleSection('schedulePopup')">Close</button>
+                </div>
+            </div>
+
             <div class="popupcontainer" id="aboutPopup">
                 <img width=100% src="images/frame.png"/>
                 <div class="popuptext">
                   <h2>about</h2>
-                  <p class="verticalScrollElement">Welcome to Uncommon Hacks, the official hackathon of the University of Chicago! Spend 24 hours working on a project and meeting cool people in this one-of-a-kind experience! In our 2023 edition of Hacks, we're excited to bring you the biggest event since the pandemic, including the overnight component that makes for a truly unforgettable experience.
+                  <p class="verticalScrollElement">
 
-                    Although Hacks will have prizes, we place more emphasis on learning and collaboration than some kind of competitive aspect. So even if you've never coded before, please do sign up! A successful Hacks team needs people with different skill sets, and if you would like to learn how to code, we'll have workshops to help you do so.
+                    Welcome to Uncommon Hacks, the official hackathon of the University of Chicago! 
+                    Spend 24 hours working on a project and meeting cool people in this one-of-a-kind experience! 
+                    In our 2024 edition of Hacks, we're excited to bring you a sneaky who-done-it energy that will 
+                    have you interrogating your bestest of friends. With an overnight component that makes for a truly 
+                    unforgettable experience, it is a mystery who will survive the night.
+
+                    <br>
+                    <br>
+
+                    Although Hacks will have prizes, we place more emphasis on learning and collaboration than some 
+                    kind of competitive aspect. So even if you've never coded before, please do sign up! 
+                    A successful Hacks team needs people with different skill sets, and if you would like to learn 
+                    how to code, we'll have workshops to help you do so.
+
+                    <br>
+                    <br>
+
+                    <u>How does it work?</u>
+                    <br>
+                    There are three steps:
+                    - Arrive at the hackathon and make teams.
+                    - Work on your project for 24 hours. Take a break with some activities.
+                    - Present your project to industry judges.
+                    <br>
+
                   </p>
                   <button onClick="toggleSection('aboutPopup')">Close</button>
                 </div>
