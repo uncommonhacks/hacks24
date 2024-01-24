@@ -220,14 +220,13 @@ h3 {
   text-align: center;
   justify-content: center;
   padding: 8px; 
-  position: absolute; /*used to be fixed*/
+  position: absolute;
   z-index: 1;
   top: 0; left: 0;
   width: 45%;
   bottom: 25%;
   left: 30%;
   color: white;
-  /* margin-left: -80px; */
 }
 
 /* Toggle this class - hide and show the popup */
@@ -241,7 +240,7 @@ h3 {
   z-index: 2;
   position: relative;
   bottom: 90%;
-  /* max-width: 60%; */
+  padding: 0% 20%;
 }
 
 /* Add animation (fade in the popup) */

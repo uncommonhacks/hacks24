@@ -64,29 +64,34 @@
                <div id="judging">
                 <h2>judging</h2>
                </div>
-               <div id="schedule">
+               <div id="schedule" >
                 <h2>schedule</h2>
                </div>
                
-               <div id="about" class="popup" onclick="openSection()">
+               <div id="about" class="popup" onclick="toggleSection('aboutPopup')">
                 <h2>about</h2>
                </div>
 
             </div>
+
+            <!--Popups-->
             <div class="popupcontainer" id="aboutPopup">
                 <img width=100% src="images/frame.png"/>
-                <h2 class="popuptext">about</h2>
-                <p class="popuptext">Welcome to Uncommon Hacks, the official hackathon of the University of Chicago! Spend 24 hours working on a project and meeting cool people in this one-of-a-kind experience! In our 2023 edition of Hacks, we're excited to bring you the biggest event since the pandemic, including the overnight component that makes for a truly unforgettable experience.
+                <div class="popuptext">
+                  <h2>about</h2>
+                  <p>Welcome to Uncommon Hacks, the official hackathon of the University of Chicago! Spend 24 hours working on a project and meeting cool people in this one-of-a-kind experience! In our 2023 edition of Hacks, we're excited to bring you the biggest event since the pandemic, including the overnight component that makes for a truly unforgettable experience.
 
-                  Although Hacks will have prizes, we place more emphasis on learning and collaboration than some kind of competitive aspect. So even if you've never coded before, please do sign up! A successful Hacks team needs people with different skill sets, and if you would like to learn how to code, we'll have workshops to help you do so.
+                    Although Hacks will have prizes, we place more emphasis on learning and collaboration than some kind of competitive aspect. So even if you've never coded before, please do sign up! A successful Hacks team needs people with different skill sets, and if you would like to learn how to code, we'll have workshops to help you do so.
                   </p>
+                  <button onClick="toggleSection('aboutPopup')">Close</button>
+                </div>
             </div>
         </div>
 
           <script>
           // When the user clicks on div, open the popup
-          function openSection() {
-            var popup = document.getElementById("aboutPopup");
+          function toggleSection(sectionId) {
+            var popup = document.getElementById(sectionId);
             popup.classList.toggle("show");
             // popup.setAttribute("visibility", "show");
           }
