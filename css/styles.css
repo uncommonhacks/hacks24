@@ -19,6 +19,10 @@ body {
   font-family: baskerville;
 }
 
+p {
+  font-family: baskerville;
+}
+
 h1 {
   font-family: bern;
   font-size: 4vw;
@@ -31,9 +35,6 @@ h2 {
 h3 {
   font-family: bern;
   font-size: 2vw;
-}
-p {
-  font-family: bern;
 }
 
 .scrollableElement {
@@ -202,7 +203,7 @@ p {
   }
 }
 
-/* Popup container - can be anything you want */
+/* Popup link class */
 .popup {
   position: relative;
   display: inline-block;
@@ -214,23 +215,33 @@ p {
 }
 
 /* The actual popup */
-.popuptext {
+.popupcontainer {
   visibility: hidden;
   text-align: center;
-  /* padding: 8px 0; */
-  position: fixed;
+  justify-content: center;
+  padding: 8px; 
+  position: absolute; /*used to be fixed*/
   z-index: 1;
   top: 0; left: 0;
-  /* bottom: 50%;
-  left: 50%; */
+  width: 45%;
+  bottom: 25%;
+  left: 30%;
+  color: white;
   /* margin-left: -80px; */
 }
 
 /* Toggle this class - hide and show the popup */
-.popuptext.show {
+.popupcontainer.show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
+}
+
+.popuptext {
+  z-index: 2;
+  position: relative;
+  bottom: 90%;
+  /* max-width: 60%; */
 }
 
 /* Add animation (fade in the popup) */
