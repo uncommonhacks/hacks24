@@ -35,33 +35,33 @@
                 <button type="button" class="btn btn-info btn-lg email xtra-btn" onclick="location.href='https://uncommonhacks.com/';">main site</button> -->
                 </div>
                <div id="introduction">
-                <h1>Uncommon</h1>
-                <h1>Hacks</h1>
+                <h1 onclick="location.href = 'https://uncommonhacks.com/';">Uncommon <br/> Hacks</h1>
+                <!-- <h1 onclick="location.href = 'https://uncommonhacks.com/';">Hacks</h1> -->
                </div>
                <div id="date-time">
                 <body>March 23-24</body>
                 <br/>
                 <body>Polsky Exchange</body>
                </div>
-               <div id="speakers">
+               <div id="speakers" class="popup" onclick="toggleSection('comingSoonPopup')">
                 <h2>speakers</h2>
                </div>
-               <div id="sponsors">
+               <div id="sponsors" class="popup" onclick="toggleSection('comingSoonPopup')">
                 <h2>sponsors</h2>
                </div>
-               <div id="contact">
+               <div id="contact" class="popup" onclick="toggleSection('contactPopup')">
                 <h3>contact/socials</h3>
                </div>
                <div id="faq" class="popup" onclick="toggleSection('faqPopup')">
                 <h2>faq</h2>
                </div>
                <div id="team">
-                <h2>team</h2>
+                <h2 onclick="location.href = 'https://team.uncommonhacks.com/';">team</h2>
                </div>
                <div id="register">
                 <h2>register</h2>
                </div>
-               <div id="judging">
+               <div id="judging" class="popup" onclick="toggleSection('comingSoonPopup')">
                 <h2>judging</h2>
                </div>
                <div id="schedule" class="popup" onclick="toggleSection('schedulePopup')" >
@@ -79,7 +79,7 @@
             <div class="popupcontainer" id="faqPopup">
                 <img width=100% src="images/frame.png"/>
                 <div class="popuptext">
-                  <h2>about</h2>
+                  <h2>FAQ</h2>
                   <p class="verticalScrollElement">
 
                     <u>- Is Hacks only for undergraduate students?</u><br>
@@ -118,7 +118,7 @@
             <div class="popupcontainer" id="schedulePopup">
                 <img width=100% src="images/frame.png"/>
                 <div class="popuptext">
-                  <h2>about</h2>
+                  <h2>Schedule</h2>
                   <p class="verticalScrollElement">
 
                     <u>Friday Workshop night</u><br>
@@ -190,6 +190,39 @@
                   <button onClick="toggleSection('aboutPopup')">Close</button>
                 </div>
             </div>
+
+            <div class="popupcontainer" id="comingSoonPopup">
+              <img width=100% src="images/frame.png"/>
+              <div class="popuptext">
+                <h2>Coming Soon!</h2>
+                <p class="verticalScrollElement">
+
+                  <!-- Coming soon! -->
+
+                </p>
+                <button onClick="toggleSection('comingSoonPopup')">Close</button>
+              </div>
+          </div>
+
+          <div class="popupcontainer" id="contactPopup">
+            <img width=100% src="images/frame.png"/>
+            <div class="popuptext">
+              <h1>Socials</h1>
+                <div class="socialButtons">
+                    <button class="btn email" onclick="location.href='mailto:celery@uncommonhacks.com?Subject=Uncommon%Hacks%2021%Inquiry';"></button>
+
+                    <button class="btn facebook" onclick="location.href='https://www.facebook.com/uncommonhacks';"></button>
+
+                    <button class="btn instagram" onclick="location.href='https://www.instagram.com/uncommonhacks/';"></button>
+
+                    <button class="btn linkedin" onclick="location.href='https://www.linkedin.com/company/uncommonhacks/';"></button>
+
+                    <button class="btn twitter" onclick="location.href='https://twitter.com/uncommonhacks';"></button>
+                  </div>
+              <button onClick="toggleSection('contactPopup')">Close</button>
+            </div>
+        </div>
+
         </div>
 
           <script>
