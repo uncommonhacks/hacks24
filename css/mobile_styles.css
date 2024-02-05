@@ -1,0 +1,397 @@
+/*fonts*/
+@font-face {
+  font-family: bern;
+  src: url(../fonts/bernhc.ttf);
+}
+
+@font-face {
+  font-family: baskerville;
+  src: url(../fonts/BASKVILL.ttf);
+}
+
+html {
+  height: 100%;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+  font-family: baskerville;
+}
+
+p {
+  font-family: baskerville;
+}
+
+a{
+  color: black;
+}
+
+h1 {
+  font-family: bern;
+  font-size: 10vw;
+
+  }
+h1:hover {
+  color:white;
+}
+h2 {
+  font-family: bern;
+  font-size: 3vw;
+}
+h2:hover {
+  color:#e3be67;
+}
+
+h3 {
+  font-family: bern;
+  font-size: 2vw;
+}
+
+h3:hover {
+  color:brown;
+}
+
+.scrollableElement {
+  position: relative;
+}
+
+/*Images*/
+#backgroundImage {
+  /*z-index: -30;*/
+  max-width: 100vw;
+  display: flex;
+}
+
+.overImage div {
+  position: absolute;
+}
+
+.verticalScrollElement {
+  max-height: 40vh;
+  overflow-y: scroll;
+}
+
+/* section positioning */
+
+#introduction {
+  bottom: 90%; left: 21%; width: 50%; text-align: left; color: #e3be67;
+  rotate: -15deg;
+  text-align: right;
+}
+
+#date-time {
+  bottom: 46%; left: 52.5%; width: 50%; color: #e3be67;
+  rotate: 15deg;
+
+}
+
+#howitworks {
+  bottom: 47%;
+  left: 29%;
+  width: 50%;
+  text-align: center;
+}
+
+#faq {
+  bottom: 65.5%;
+  left: 60%;
+  width: 30%;
+  text-align: center;
+}
+
+#speakers {
+  bottom: 37%;
+  left: 5%;
+  width: 30%;
+  text-align: left;
+}
+
+#speakers h1 {
+   font-size: 10vw;
+}
+
+#about {
+  top: 28%;
+  left: 8%;
+  width: 30%;
+  text-align: center;
+} 
+
+#register {
+  bottom: 2.5%;
+  left: 27%;
+  width: flex;
+  text-align: center;
+  rotate: -33deg;
+} 
+
+.registerHover:hover {
+  color: brown !important;
+}
+
+#schedule {
+  bottom: 53%;
+  left: 19%;
+  width: 30%;
+  text-align: center;
+} 
+
+#judging {
+  bottom: 43.5%;
+  left: 58%;
+  width: 30%;
+  text-align: center;
+}
+
+#judging h1 {
+  font-size: 10vw;
+}
+
+#team {
+  bottom: 18%;
+  left: 15%;
+  width: 30%;
+  text-align: center;
+}
+
+#sponsors {
+  bottom: 24%;
+  left: 48%;
+  width: 30%;
+  text-align: center;
+}
+
+#contact {
+  bottom: 10%;
+  left: 60%;
+  width: 30%;
+  text-align: center;
+  rotate: -10deg;
+}
+
+#contact h1 {
+  font-size: 10vw;
+}
+
+/* Social buttons */
+
+.socialButtons {
+  z-index: 2;
+}
+
+.email {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/email.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-width: 0px;
+  background-color: transparent;
+  box-shadow: 0 0 0px 0px #599c5b inset, 0 0 0 0 #599c5b;
+  transition: all 150ms ease-in-out;
+}
+
+.email:hover {
+  box-shadow: 0 0 10px 0 #599c5b inset, 0 0 30px 5px #05753d;
+}
+
+.facebook {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/facebook.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-width: 0px;
+  background-color: transparent;
+  box-shadow: 0 0 0px 0px #378be1 inset, 0 0 0 0 #378be1;
+  transition: all 150ms ease-in-out;
+}
+
+.facebook:hover {
+  box-shadow: 0 0 10px 0 #378be1 inset, 0 0 30px 5px #378be1;
+}
+
+.instagram {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/instagram2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-width: 0px;
+  background-color: transparent;
+  box-shadow: 0 0 0px 0px #db42dc inset, 0 0 0 0 #db42dc;
+  transition: all 150ms ease-in-out;
+}
+
+.instagram:hover {
+  box-shadow: 0 0 10px 0 #db42dc inset, 0 0 30px 5px #db42dc;
+}
+
+.linkedin {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/linkedin.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-width: 0px;
+  background-color: transparent;
+  box-shadow: 0 0 0px 0px #3fd2c8 inset, 0 0 0 0 #3fd2c8;
+  transition: all 150ms ease-in-out;
+}
+
+.linkedin:hover {
+  box-shadow: 0 0 10px 0 #3fd2c8 inset, 0 0 30px 5px #3fd2c8;
+}
+
+.twitter {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/twitter.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-width: 0px;
+  background-color: transparent;
+  box-shadow: 0 0 0px 0px #86dbde inset, 0 0 0 0 #86dbde;
+  transition: all 150ms ease-in-out;
+}
+
+.twitter:hover {
+  box-shadow: 0 0 10px 0 #86dbde inset, 0 0 30px 5px #86dbde;
+}
+
+*/
+
+/* .btn {
+  background-color: #F26F63 !important;
+  border: #F26F63 !important;
+} */
+
+.buttons {
+  bottom: 2.5%;
+  width: 100%;
+  text-align: center;
+  font-family: baskerville;
+}
+
+.buttons * {
+  font-size: 2rem;
+}
+
+.xtra-btn {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 1186px) {
+  body {
+      font-size: 1.5vw;
+  }
+
+  h1 {
+      font-size: 15vw;
+  }
+
+  #introduction {
+      bottom: 88%; left: 23%;
+      transform: scale(0.75);
+  }
+
+  /*
+  #howitworks {
+      bottom: 44%;
+  }
+
+  #judging {
+      bottom: 66%;
+  }
+
+  #schedule {
+      bottom: 85%;
+  }
+
+  #about {
+      bottom: 89.5%;
+  }
+
+  p, ol {
+      margin-bottom: 1vw;
+  }
+
+  ul {
+      padding-left: 0;
+  } */
+
+  .buttons * {
+      font-size: 2vw;
+  }
+}
+
+/* Popup link class */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popupcontainer {
+  visibility: hidden;
+  text-align: center;
+  justify-content: center;
+  padding: 8px; 
+  position: fixed;
+  z-index: 1;
+  top: 0; left: 0;
+  width: 90%;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+}
+
+/* Toggle this class - hide and show the popup */
+.popupcontainer.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.popupcontainer img {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.popuptext {
+  z-index: 2;
+  position: fixed;
+  top: 15%;
+  padding: 0% 20%;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@media only screen and (max-width: 675px) {
+  .buttons * {
+      font-size: 1.5vw;
+  }
+}
