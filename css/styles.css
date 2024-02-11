@@ -47,10 +47,10 @@ h3 {
   font-family: bern;
   font-size: 2vw;
 }
-
+/* 
 h3:hover {
   color:brown;
-}
+} */
 
 .scrollableElement {
   position: relative;
@@ -98,13 +98,15 @@ h3:hover {
   left: 20%;
   width: 30%;
   text-align: center;
+  rotate: 15deg;
 }
 
 #speakers {
-  bottom: 84%;
+  bottom: 82%;
   left: 60%;
   width: 30%;
   text-align: left;
+  rotate: 15deg;
 }
 
 #about {
@@ -112,7 +114,20 @@ h3:hover {
   left: 13%;
   width: 30%;
   text-align: center;
+  rotate: 15deg;
 } 
+
+#conduct {
+  bottom: 88.5%;
+  left: 24%;
+  width: 30%;
+  text-align: center;
+  rotate: 15deg;
+} 
+
+#conduct:hover {
+  color: #e3be67 !important;
+}
 
 #register {
   bottom: 9.5%;
@@ -131,6 +146,7 @@ h3:hover {
   left: 40%;
   width: 30%;
   text-align: center;
+  rotate: 15deg;
 } 
 
 #judging {
@@ -138,6 +154,7 @@ h3:hover {
   left: 66%;
   width: 30%;
   text-align: center;
+  rotate: 14deg;
 }
 
 #team {
@@ -145,13 +162,15 @@ h3:hover {
   left: 72%;
   width: 30%;
   text-align: center;
+  rotate: 15deg;
 }
 
 #sponsors {
   bottom: 67%;
-  left: 76.5%;
+  left: 76%;
   width: 30%;
   text-align: center;
+  rotate: 15deg;
 }
 
 #contact {
@@ -160,6 +179,10 @@ h3:hover {
   width: 30%;
   text-align: center;
   rotate: -10deg;
+}
+
+#contact:hover {
+  color: brown !important;
 }
 
 /* Social buttons */
