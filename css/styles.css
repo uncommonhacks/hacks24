@@ -21,6 +21,9 @@ body {
 
 p {
   font-family: baskerville;
+  border-style: solid;
+  border-width: 2px;
+  border-color: aliceblue;
 }
 
 a{
@@ -54,6 +57,7 @@ h3:hover {
 
 .scrollableElement {
   position: relative;
+  border: solid;
 }
 
 /*Images*/
