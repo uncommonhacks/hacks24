@@ -66,6 +66,7 @@ p {
   border-style: solid;
   border-width: 2px;
   border-color: aliceblue;
+  font-size: medium;
 }
 
 a{
@@ -134,7 +135,6 @@ h3:hover {
 #date-time {
   bottom: 46%; left: 52.5%; width: 50%; color: #e3be67;
   rotate: 15deg;
-
 }
 /* 
 #howitworks {

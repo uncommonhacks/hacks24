@@ -82,8 +82,13 @@ h3:hover {
 }
 
 #date-time {
-  bottom: 90%; left: 21%; width: 50%; text-align: left; color: #e3be67;
+  bottom: 84.5%; left: 40%; width: 50%; text-align: left; color: #e3be67;
   background-color: brown;
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+  width: fit-content;
+
 }
 
 #howitworks {
