@@ -9,14 +9,57 @@
   src: url(../fonts/BASKVILL.ttf);
 }
 
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #404040; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BF7E45;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #335928; 
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+/*for scrollable element*/
+/* Track */
+.scrollableElement::-webkit-scrollbar-track {
+  background: #D3D3D3; 
+}
+ 
+/* Handle */
+.scrollableElement::-webkit-scrollbar-thumb {
+  background: #335928; 
+  border-radius: 20px;
+}
+
+/* Handle on hover
+.scrollableElement::-webkit-scrollbar-thumb:hover {
+  background: #BF7E45; 
+} */
+
 html {
   height: 100%;
+  overflow-x:hidden;
 }
 body {
   max-width: 100%;
   overflow-x: hidden;
   min-height: 100%;
   font-family: baskerville;
+  
 }
 
 p {
@@ -24,15 +67,19 @@ p {
   border-style: solid;
   border-width: 2px;
   border-color: aliceblue;
+  font-size: medium;
 }
 
 a{
   color: black;
+  width:fit-content;
 }
 
 h1 {
   font-family: bern;
   font-size: 4vw;
+  width: fit-content;
+  height: fit-content;
 
   }
 h1:hover {
@@ -41,19 +88,24 @@ h1:hover {
 h2 {
   font-family: bern;
   font-size: 3vw;
+  width:fit-content;
+  color: black;
+  /* background-color: white; */
 }
-h2:hover {
+/* h2:hover {
   color:#e3be67;
-}
+} */
 
 h3 {
   font-family: bern;
   font-size: 2vw;
+  width:fit-content;
+  color: black;
 }
-/* 
+
 h3:hover {
   color:brown;
-} */
+}
 
 .scrollableElement {
   position: relative;
@@ -79,7 +131,7 @@ h3:hover {
 /* section positioning */
 
 #introduction {
-  bottom: 58%; left: 21%; width: 50%; text-align: left; color: #e3be67;
+  bottom: 44%; left: 53%; width: 50%; text-align: left; color: #e3be67;
   rotate: 15deg;
   text-align: right;
 }
@@ -87,43 +139,42 @@ h3:hover {
 #date-time {
   bottom: 46%; left: 52.5%; width: 50%; color: #e3be67;
   rotate: 15deg;
-
 }
-
+/* 
 #howitworks {
   bottom: 47%;
   left: 29%;
   width: 50%;
   text-align: center;
-}
+} */
 
 #faq {
-  bottom: 60.5%;
-  left: 20%;
+  bottom: 55%;
+  left: 32%; /*20*/
   width: 30%;
   text-align: center;
   rotate: 15deg;
 }
 
 #speakers {
-  bottom: 82%;
-  left: 60%;
+  bottom: 15%;
+  left: 51%;
   width: 30%;
-  text-align: left;
+  text-align: center;
   rotate: 15deg;
 }
 
 #about {
-  bottom: 22%;
-  left: 13%;
+  bottom: 20%;
+  left: 25%;
   width: 30%;
   text-align: center;
   rotate: 15deg;
 } 
 
 #conduct {
-  bottom: 88.5%;
-  left: 24%;
+  bottom: 85.5%;
+  left: 34%;
   width: 30%;
   text-align: center;
   rotate: 15deg;
@@ -133,53 +184,59 @@ h3:hover {
   color: #e3be67 !important;
 }
 
+.yellowHover:hover {
+  color: #e3be67 !important;
+}
+
 #register {
-  bottom: 9.5%;
-  left: 8%;
-  width: flex;
-  text-align: center;
-  rotate: -33deg;
+  bottom: 81%;
+  left: 61%;
+  width: 30%;
+  text-align: left;
+  rotate: 15deg;
+  
 } 
 
+/* actually now controlling the color of schedule hover */
 .registerHover:hover {
   color: brown !important;
 }
 
 #schedule {
-  bottom: 18%;
-  left: 40%;
-  width: 30%;
+  bottom: 9.5%;
+  left: 7%;
+  width: flex;
   text-align: center;
-  rotate: 15deg;
+  rotate: -33deg;
 } 
 
 #judging {
-  bottom: 15.5%;
-  left: 66%;
+  bottom: 12.5%;
+  left: 78%;
   width: 30%;
   text-align: center;
   rotate: 14deg;
 }
 
 #team {
-  bottom: 40%;
-  left: 72%;
+  bottom: 35%;
+  left: 85%;
   width: 30%;
   text-align: center;
   rotate: 15deg;
 }
 
 #sponsors {
-  bottom: 67%;
-  left: 76%;
+  bottom: 64%;
+  left: 87%;
   width: 30%;
   text-align: center;
   rotate: 15deg;
 }
 
 #contact {
-  bottom: 87%;
-  left: 76.5%;
+  bottom: 90%;
+  left: 86.5%;
   width: 30%;
   text-align: center;
   rotate: -10deg;
@@ -312,7 +369,7 @@ h3:hover {
   }
 
   #introduction {
-      bottom: 58%; left: 21%;
+    bottom: 44%; left: 53%;
   }
 
   /*
@@ -354,12 +411,14 @@ h3:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  text-align: center;
 }
 
 /* The actual popup */
 .popupcontainer {
   visibility: hidden;
   text-align: center;
+  align-items: center!;
   justify-content: center;
   padding: 8px; 
   position: absolute;
@@ -369,6 +428,7 @@ h3:hover {
   bottom: 25%;
   left: 30%;
   color: white;
+  align-items: center;
 }
 
 /* Toggle this class - hide and show the popup */
@@ -383,6 +443,7 @@ h3:hover {
   position: relative;
   bottom: 90%;
   padding: 0% 20%;
+  text-align: center;
 }
 
 /* Add animation (fade in the popup) */
