@@ -72,7 +72,6 @@ p {
 
 a{
   color: black;
-  width:fit-content;
 }
 
 h1 {
@@ -90,7 +89,6 @@ h2 {
   font-family: bern;
   font-size: 3vw;
   width:fit-content;
-  color: black;
   /* background-color: white; */
 }
 /* h2:hover {
@@ -101,7 +99,6 @@ h3 {
   font-family: bern;
   font-size: 2vw;
   width:fit-content;
-  color: black;
 }
 
 h3:hover {
