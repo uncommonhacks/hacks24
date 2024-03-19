@@ -20,7 +20,7 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #BF7E45; 
+  background: #BF7E45;
   border-radius: 20px;
 }
 
@@ -83,6 +83,7 @@ h1:hover {
 h2 {
   font-family: bern;
   font-size: 3vw;
+  /* background-color: white; */
 }
 h2:hover {
   color:#e3be67;
@@ -148,10 +149,10 @@ h3:hover {
 }
 
 #speakers {
-  bottom: 82%;
-  left: 60%;
+  bottom: 18%;
+  left: 41%;
   width: 30%;
-  text-align: left;
+  text-align: center;
   rotate: 15deg;
 }
 
@@ -175,29 +176,35 @@ h3:hover {
   color: #e3be67 !important;
 }
 
+.yellowHover:hover {
+  color: #e3be67 !important;
+}
+
 #register {
-  bottom: 9.5%;
-  left: 8%;
-  width: flex;
-  text-align: center;
-  rotate: -33deg;
+  bottom: 81%;
+  left: 61%;
+  width: 30%;
+  text-align: left;
+  rotate: 15deg;
+  
 } 
 
+/* actually now controlling the color of schedule hover */
 .registerHover:hover {
   color: brown !important;
 }
 
 #schedule {
-  bottom: 18%;
-  left: 40%;
-  width: 30%;
+  bottom: 9.5%;
+  left: 7%;
+  width: flex;
   text-align: center;
-  rotate: 15deg;
+  rotate: -33deg;
 } 
 
 #judging {
   bottom: 15.5%;
-  left: 66%;
+  left: 68%;
   width: 30%;
   text-align: center;
   rotate: 14deg;
@@ -205,7 +212,7 @@ h3:hover {
 
 #team {
   bottom: 40%;
-  left: 72%;
+  left: 73%;
   width: 30%;
   text-align: center;
   rotate: 15deg;
@@ -213,7 +220,7 @@ h3:hover {
 
 #sponsors {
   bottom: 67%;
-  left: 76%;
+  left: 77%;
   width: 30%;
   text-align: center;
   rotate: 15deg;
