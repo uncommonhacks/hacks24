@@ -76,14 +76,14 @@ h3:hover {
 
 #introduction {
   bottom: 90%; left: 21%; width: 50%; text-align: left; color: #e3be67;
-  rotate: -15deg;
+  rotate: -8deg;
   text-align: right;
+  
 }
 
 #date-time {
-  bottom: 46%; left: 52.5%; width: 50%; color: #e3be67;
-  rotate: 15deg;
-
+  bottom: 90%; left: 21%; width: 50%; text-align: left; color: #e3be67;
+  background-color: brown;
 }
 
 #howitworks {
